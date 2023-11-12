@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightgray;
+}
+h1{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
+  color: lightcoral;
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0, 255, 221, 0.453));
+}
+
+.game-container{
+  width: 50%;
+  height: 75vh;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(81, 0, 255));
+}
+.logo{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.logo button{
+  transition: 0.3s ease-in-out;
+}
+.logo button:hover{
+  transform: scale(1.1);
+  border-color: red;
+}
+.logo button:active{
+  transform: scale(1.6);
+  border-color: green;
+}
+.container-item{
+  border: none;
+  padding: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: black
+  ;
+  border: 3px solid white;
+}
+.move-icon {
+  width: 50px;
+}
+
+.reseult-screen{
+  width: 60%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  background-color: rgb(34, 189, 181);
+  border-radius: 7px;
+}
+
+.reset-btn{
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: 3px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  color: whitesmoke;
+  background-color: black;
+  padding: 0 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.reset-btn:hover{
+  transform: scale(1.09);
+  border-color: blueviolet;
+}
+.reset-btn:active{
+  transform: scale(1.5);
+}
+
+@media (max-width: 950px){
+  .game-container{
+    width: 80%;
+    height: 60vh;
+  }  
+}
+
+@media (max-width: 550px){
+  .game-container{
+    width: 90%;
+    height: 70vh;
+  }  
+}
+
+@media (max-width: 400px){
+  .game-container{
+    width: 95%;
+    height: 60vh;
+  } 
+  .reseult-screen{
+    width: 80%;
+    height: 42%;
+  }  
+  .logo{
+    gap: 20px;
+  } 
+  .container-item{
+    padding: 20px;
+  }
+  h1{
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
